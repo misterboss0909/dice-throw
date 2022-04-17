@@ -3,10 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="dice.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dice throw</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>hello</h1>
+    <div class="container">
+      <div class="dice-container">
+        <div id="dice">
+          <div class="dots-container upper-left">
+            <span class="dot dot-2 dot-4 dot-5 dot-6"></span>
+          </div>
+          <div class="dots-container middle-left">
+            <span class="dot dot-6"></span>
+          </div>
+          <div class="dots-container bottom-left">
+            <span class="dot dot-3 dot-4 dot-5 dot-6"></span>
+          </div>
+          <div class="dots-container center">
+            <span class="dot dot-1 dot-3 dot-5"></span>
+          </div>
+          <div class="dots-container upper-right">
+            <span class="dot dot-3 dot-4 dot-5 dot-6"></span>
+          </div>
+          <div class="dots-container middle-right">
+            <span class="dot dot-6"></span>
+          </div>
+          <div class="dots-container bottom-right">
+            <span class="dot dot-2 dot-4 dot-5 dot-6"></span>
+          </div>
+        </div>
+      </div>
+      <h2 id="dice-roll"></h2>
+      <button id="roll" class="btn" onclick="rollDice()">Roll the dice!</button>
+    </div>
   </body>
+
+  <script src="main.js"></script>
 </html>
